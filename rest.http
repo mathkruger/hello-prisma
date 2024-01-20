@@ -1,0 +1,59 @@
+POST http://localhost:3333/user
+Content-Type: application/json
+
+{
+  "email": "mail3@mail.com",
+  "name": "Person 3"
+}
+
+###
+
+GET http://localhost:3333/user
+
+###
+
+GET http://localhost:3333/user/1
+
+###
+
+PUT http://localhost:3333/user/1
+Content-Type: application/json
+
+{
+  "name": "Matheus Updated"
+}
+
+###
+
+POST http://localhost:3333/post
+Content-Type: application/json
+
+{
+  "title": "Lorem Ipsum 2",
+  "content": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "published": false,
+  "authorId": 2
+}
+
+###
+
+GET http://localhost:3333/post
+
+###
+
+GET http://localhost:3333/post?authorId=2
+
+###
+
+GET http://localhost:3333/post/1
+
+###
+
+PUT http://localhost:3333/post/1
+Content-Type: application/json
+
+{
+  "published": true
+}
+
+###
